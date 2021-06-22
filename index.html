@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CREDIT CALCULATOR</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+</head>
+<body class="bg-success">
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-10 offset-1">
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="text-center text-primary">ONLINE CREDIT CALCULATOR</h3>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="credit_sum">Credit payment</label>
+                                <input type="text" id="credit_sum" class="form-control"
+                                       placeholder="Credit payment ...">
+                            </div>
+                            <div class="form-group">
+                                <label for="annual_sum">Annual payment(%)</label>
+                                <select name="" class="form-control" id="annual_sum">
+                                    <option value="10">10%</option>
+                                    <option value="15">15%</option>
+                                    <option value="18">18%</option>
+                                    <option value="20">20%</option>
+                                    <option value="25">25%</option>
+                                    <option value="36">36%</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="initial_sum">Initial payment(%)</label>
+                                <input type="text" id="initial_sum" class="form-control"
+                                       placeholder="Initial payment ...">
+                            </div>
+                            <div class="form-group">
+                                <label for="period">period (month)</label>
+                                <input type="text" class="form-control" id="period" placeholder="period (month) ...">
+                            </div>
+
+                            <button class="btn btn-primary float-right">CALCULATE</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-10 offset-1">
+            <div class="card">
+                <div class="card-header">
+
+                </div>
+                <div class="card-body">
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Sana</th>
+                            <th>Кредит қолдиғи</th>
+                            <th>Қайтарилиш миқдори</th>
+                            <th>Кредит фоизи</th>
+                            <th>Тўлов учун жами</th>
+                            <th>Кунлар</th>
+                        </tr>
+                        </thead>
+                        <tbody id="result">
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/moment.js"></script>
+<script src="js/jquery.js"></script>
+<script src="js/popover.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
